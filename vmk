@@ -1,0 +1,133 @@
+// vmk Keyboard Layout
+
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+
+    include "latin"
+    name[Group1]= "vmk";
+
+	key <TLDE>	{[        grave,  asciitilde,             degree,          questiondown ]};
+    key <AE01>	{[            1,      exclam,          plusminus,            exclamdown ]};
+	key <AE02>	{[            2,          at,             ecaron,                Ecaron ]};
+    key <AE03>	{[            3,  numbersign,             scaron,                Scaron ]};
+    key <AE04>	{[            4,      dollar,             ccaron,                Ccaron ]};
+    key <AE05>	{[            5,     percent,             rcaron,                Rcaron ]};
+    key <AE06>	{[            6, asciicircum,             zcaron,                Zcaron ]};
+    key <AE07>	{[            7,   ampersand,             yacute,                Yacute ]};
+    key <AE08>	{[            8,    asterisk,             aacute,                Aacute ]};
+    key <AE09>	{[            9,   parenleft,             iacute,                Iacute ]};
+    key <AE10>	{[            0,  parenright,             eacute,                Eacute ]};
+    key <AE11>	{[        minus,  underscore,       dead_cedilla,           dead_macron ]};
+    key <AE12>	{[        equal,        plus,         dead_acute,            dead_caron ]};
+
+    key <AD01>	{[            q,          Q,                   q,                     Q ]};
+    key <AD02>	{[            w,          W,                   w, Greek_finalsmallsigma ]};
+    key <AD03>	{[            e,          E,            EuroSign,         Greek_epsilon ]};
+    key <AD04>	{[            r,          R,                   r,             Greek_rho ]};
+    key <AD05>	{[            t,          T,               thorn,             Greek_tau ]};
+    key <AD06>	{[            y,          Y,                 yen,         Greek_upsilon ]};
+    key <AD07>	{[            u,          U,                   u,           Greek_theta ]};
+    key <AD08>	{[            i,          I,                   i,            Greek_iota ]};
+    key <AD09>	{[            o,          O,                   o,         Greek_omicron ]};
+    key <AD10>	{[            p,          P,            sterling,              Greek_pi ]};
+    key <AD11>	{[  bracketleft,  braceleft,              uacute,                Uacute ]};
+    key <AD12>	{[ bracketright, braceright,            division,              multiply ]};
+
+    key <AC01>	{[            a,          A,                   a,           Greek_alpha ]};
+    key <AC02>	{[            s,          S,                   s,           Greek_sigma ]};
+    key <AC03>	{[            d,          D,                   d,           Greek_delta ]};
+    key <AC04>	{[            f,          F,                   f,             Greek_phi ]};
+    key <AC05>	{[            g,          G,                   g,           Greek_gamma ]};
+    key <AC06>	{[            h,          H,           leftarrow,             Greek_eta ]};
+    key <AC07>	{[            j,          J,           downarrow,              Greek_xi ]};
+    key <AC08>	{[            k,          K,             uparrow,           Greek_kappa ]};
+    key <AC09>	{[            l,          L,          rightarrow,          Greek_lambda ]};
+    key <AC10>	{[    semicolon,      colon,               uring,                 Uring ]};
+    key <AC11>	{[   apostrophe,   quotedbl,             section,              NoSymbol ]};
+    key <BKSL>	{[    backslash,        bar,      dead_diaeresis,             approxeq  ]};
+
+    key <LSGT>	{[   dead_greek,          v,                   v,                     v ]};
+    key <AB01>	{[            z,          Z,                   z,            Greek_zeta ]};
+    key <AB02>	{[            x,          X,                   x,             Greek_chi ]};
+    key <AB03>	{[            c,          C,                cent,             Greek_psi ]};
+    key <AB04>	{[            v,          V,  doublelowquotemark,           Greek_omega ]};
+    key <AB05>	{[            b,          B, leftdoublequotemark,            Greek_beta ]};
+    key <AB06>	{[            n,          N,                   n,              Greek_nu ]};
+    key <AB07>	{[            m,          M,                   m,              Greek_mu ]};
+    key <AB08>	{[        comma,       less,           checkmark,             copyright ]};
+    key <AB09>	{[       period,    greater,         ballotcross,            registered ]};
+    key <AB10>	{[        slash,   question,    dead_perispomeni,             trademark ]};
+
+    key <SPCE>	{[        space,      space,        nobreakspace,          nobreakspace ]};
+
+	include "level3(ralt_switch)"
+};
+
+
+
+xkb_symbols "nobloat" {
+
+	// If all you want is to be able to type czech diacritics on a en_us keyboard, use this.
+	// Similar to Czech coder, but with less extra characters.
+	// If you want more explenation on how this is diferend, visi
+
+
+    include "latin"
+    name[Group1]= "vmk (no bloat)";
+
+	key <TLDE>	{[        grave,  asciitilde,       grave, asciitilde ]};
+    key <AE01>	{[            1,      exclam,           1,     exclam ]};
+	key <AE02>	{[            2,          at,      ecaron,     Ecaron ]};
+    key <AE03>	{[            3,  numbersign,      scaron,     Scaron ]};
+    key <AE04>	{[            4,      dollar,      ccaron,     Ccaron ]};
+    key <AE05>	{[            5,     percent,      rcaron,     Rcaron ]};
+    key <AE06>	{[            6, asciicircum,      zcaron,     Zcaron ]};
+    key <AE07>	{[            7,   ampersand,      yacute,     Yacute ]};
+    key <AE08>	{[            8,    asterisk,      aacute,     Aacute ]};
+    key <AE09>	{[            9,   parenleft,      iacute,     Iacute ]};
+    key <AE10>	{[            0,  parenright,      eacute,     Eacute ]};
+    key <AE11>	{[        minus,  underscore,       minus, underscore ]};
+    key <AE12>	{[        equal,        plus,  dead_acute, dead_caron ]};
+
+    key <AD01>	{[            q,          Q,            q,          Q ]};
+    key <AD02>	{[            w,          W,            w,          W ]};
+    key <AD03>	{[            e,          E,            e,          E ]};
+    key <AD04>	{[            r,          R,            r,          R ]};
+    key <AD05>	{[            t,          T,            t,          T ]};
+    key <AD06>	{[            y,          Y,            y,          Y ]};
+    key <AD07>	{[            u,          U,            u,          U ]};
+    key <AD08>	{[            i,          I,            i,          I ]};
+    key <AD09>	{[            o,          O,            o,          O ]};
+    key <AD10>	{[            p,          P,            p,          P ]};
+    key <AD11>	{[  bracketleft,  braceleft,       uacute,     Uacute ]};
+    key <AD12>	{[ bracketright, braceright, bracketright, braceright ]};
+
+    key <AC01>	{[            a,          A,            a,          A ]};
+    key <AC02>	{[            s,          S,            s,          S ]};
+    key <AC03>	{[            d,          D,            d,          D ]};
+    key <AC04>	{[            f,          F,            f,          F ]};
+    key <AC05>	{[            g,          G,            g,          G ]};
+    key <AC06>	{[            h,          H,            h,          H ]};
+    key <AC07>	{[            j,          J,            j,          J ]};
+    key <AC08>	{[            k,          K,            k,          K ]};
+    key <AC09>	{[            l,          L,            l,          L ]};
+    key <AC10>	{[    semicolon,      colon,        uring,      Uring ]};
+    key <AC11>	{[   apostrophe,   quotedbl,   apostrophe,    quotebl ]};
+    key <BKSL>	{[    backslash,        bar,    backslash,       bar  ]};
+
+    key <LSGT>	{[         less,    greater,         less,    greater ]};
+    key <AB01>	{[            z,          Z,            z,          Z ]};
+    key <AB02>	{[            x,          X,            x,          X ]};
+    key <AB03>	{[            c,          C,            c,          C ]};
+    key <AB04>	{[            v,          V,            v,          V ]};
+    key <AB05>	{[            b,          B,            b,          B ]};
+    key <AB06>	{[            n,          N,            n,          N ]};
+    key <AB07>	{[            m,          M,            m,          M ]};
+    key <AB08>	{[        comma,       less,        comma,       less ]};
+    key <AB09>	{[       period,    greater,       period,    greater ]};
+    key <AB10>	{[        slash,   question,        slash,   question ]};
+
+    key <SPCE>	{[        space,      space,        space,      space ]};
+
+	include "level3(ralt_switch)"
+};
