@@ -8,8 +8,8 @@ This project is a collection of keyboard layouts mainly targeted for people who 
 
 # Layout Variants
 The layout currently features 2 variants:
-* default: Allows you to type Czech diacritics with RAlt and type Greek letters with RAlt+Shift, also adds a lot of other characters (see readme/vmk_default/)
-* nobloat: only has Czech diacritics added under RAlt, nothing else (see readme/vmk_nobloat/)
+* default: Allows you to type Czech diacritics with RAlt and type Greek letters with RAlt+Shift, also adds a lot of other characters (see [layout images](readme/vmk_default/))
+* nobloat: only has Czech diacritics added under RAlt, nothing else (see [layout images](readme/vmk_nobloat))
 
 # How to Use
 1.  clone this repo `git clone https://github.com/vmkxyz/vmk-xkb-layout.git`
