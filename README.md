@@ -23,7 +23,7 @@ that should work, havent tested it much tho
 Q: How do I change my keyboard layout?<br>
 A: On a DE, find it in settings, on Xorg WMs I think you use the `setxkbmap` command; wayland WMs each have differend ways of setting it, just read their documentation.
 
-Q: Why is the layout called 'vmk'?
+Q: Why is the layout called 'vmk'?<br>
 A: First half of my github username, maybe I'll change the layout name in the future, I just didn't know what to call it.
 
 Q: Will you make more variants?<br>
