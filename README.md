@@ -19,7 +19,7 @@ The layout currently features 2 variants:
 
 that should work, havent tested it much tho
 
-# QnA
+# Q&A
 Q: How do I change my keyboard layout?<br>
 A: On a DE, find it in settings, on Xorg WMs I think you use the `setxkbmap` command; wayland WMs each have differend ways of setting it, just read their documentation.
 
