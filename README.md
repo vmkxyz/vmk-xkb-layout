@@ -12,7 +12,7 @@ The layout currently features 2 variants:
     * nobloat: only has Czech diacritics added under RAlt, nothing else (see readme/vmk_nobloat/)
 
 # How to Use
-1.  clone this repo `git clone https://github.com/vmkxyz/vmk-keyboard-layout.git`
+1.  clone this repo `git clone https://github.com/vmkxyz/vmk-xkb-layout.git`
 2.  copy the layout to the /usr/share/X11/xkb/symbols/ `sudo cp vmk-keyboard-layout/vmk /etc/share/X11/xkb/symbols/vmk`
 3.  reboot
 4.  set your keyboard layout to vmk (and variant to nobloat if you prefer that)
