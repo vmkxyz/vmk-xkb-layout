@@ -39,7 +39,7 @@ A: I am going to write a markdown file describing the process of making your own
 The [czech coder layout](https://github.com/michalkahle/czech-coder-xkb) by [Michal Kahle](https://github.com/michalkahle) is a cool project and might be all you need, go check it out.<br>
 Tested on Arch Linux, Hyprland.<br>
 Layout screenshots made in Gnome Tecla.<br>
-If your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml`:
+If your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml` and then reboot:
 ````
     <layout>
       <configItem>
