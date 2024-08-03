@@ -1,21 +1,21 @@
 # Before you Read
-the documention is still a work in progress<br>
-for now Linux only, uses the X11 xkb system (which you can use on wayland)<br>
-note: the right alt key, aka 'AltGr' will be refered to as 'RAlt' in the documentation<br>
+The documention is still a work in progress.<br>
+For now Linux only, uses the X11 xkb system (which you can use on wayland).<br>
+Note: The right alt key, aka 'AltGr' will be refered to as 'RAlt' in the documentation.<br>
 
 # About This Project
 This project is a collection of keyboard layouts mainly targeted for people who prefer the US keyboard layout but need to write czech diacritics. While not inspired by it, it has a similar goal to the [czech coder layout](https://github.com/michalkahle/czech-coder-xkb) made by [Michal Kahle](https://github.com/michalkahle), however, this is a standalone layout with multiple variants in it reather the a single variant of the Czech layout.
 
 # Layout Variants
 The layout currently features 2 variants:
-* default: Allows you to type Czech diacritics with RAlt and type Greek letters with RAlt+Shift, also adds a lot of other characters (see [layout images](readme/vmk_default/))
-* nobloat: only has Czech diacritics added under RAlt, nothing else (see [layout images](readme/vmk_nobloat))
+* default: Allows you to type Czech diacritics with RAlt and type Greek letters with RAlt+Shift, also adds a lot of other characters (see [layout images](readme/vmk_default/)).
+* nobloat: Only has Czech diacritics added under RAlt, nothing else (see [layout images](readme/vmk_nobloat)).
 
 # How to Use
-1.  clone this repo `git clone https://github.com/vmkxyz/vmk-xkb-layout.git`
-2.  copy the layout to the /usr/share/X11/xkb/symbols/ `sudo cp vmk-keyboard-layout/vmk /etc/share/X11/xkb/symbols/vmk`
-3.  reboot
-4.  set your keyboard layout to vmk (and variant to nobloat if you prefer that)
+1.  Clone this repo: `git clone https://github.com/vmkxyz/vmk-xkb-layout.git`
+2.  Copy the layout to the `/usr/share/X11/xkb/symbols/` directory: `sudo cp vmk-keyboard-layout/vmk /etc/share/X11/xkb/symbols/vmk`
+3.  Reboot
+4.  Set your keyboard layout to 'vmk' and chose your variant.
 
 that should work, havent tested it much tho
 
@@ -36,10 +36,10 @@ Q: I want to make my own layout too.<br>
 A: I am going to write a markdown file describing the process of making your own keyboard layout or editing other ones, it will be in this repo when its done.
 
 # Other Stuff
-[czech coder layout](https://github.com/michalkahle/czech-coder-xkb) by [Michal Kahle](https://github.com/michalkahle) is a cool project and might be all you need, go check it out<br>
-tested on Arch Linux, Hyprland<br>
-layout screenshots made in gnome tecla<br>
-if your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml`:
+The [czech coder layout](https://github.com/michalkahle/czech-coder-xkb) by [Michal Kahle](https://github.com/michalkahle) is a cool project and might be all you need, go check it out.<br>
+Tested on Arch Linux, Hyprland.<br>
+Layout screenshots made in Gnome Tecla.<br>
+If your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml`:
 ````
     <layout>
       <configItem>
