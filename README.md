@@ -38,4 +38,26 @@ A: I am going to write a markdown file describing the process of making your own
 # Other Stuff
 [czech coder layout](https://github.com/michalkahle/czech-coder-xkb) by [Michal Kahle](https://github.com/michalkahle) is a cool project and might be all you need, go check it out<br>
 tested on Arch Linux, Hyprland<br>
-layout screenshots made in gnome tecla
+layout screenshots made in gnome tecla<br>
+if your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml`:
+````
+    <layout>
+      <configItem>
+        <name>vmk</name>
+        <!-- Keyboard indicator dor vmk layouts -->
+        <shortDescription>vmk</shortDescription>
+        <description>vmk Custom Layout</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+	</languageList>
+      </configItem>
+      <variantList>
+        <variant>
+	  <configItem>
+	    <name>nobloat</name>
+	    <description>US layout with czech diacritics under RAlt, nothing more than that</description>
+	  </configItem>
+	</variant>
+      </variantList>
+    </layout>
+````
