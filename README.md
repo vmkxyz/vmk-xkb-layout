@@ -20,9 +20,6 @@ The layout currently features 2 variants:
 that should work, havent tested it much tho
 
 # Q&A
-Q: How do I change my keyboard layout?<br>
-A: On a DE, find it in settings, on Xorg WMs I think you use the `setxkbmap` command; wayland WMs each have differend ways of setting it, just read their documentation.
-
 Q: Why is the layout called 'vmk'?<br>
 A: First half of my github username, maybe I'll change the layout name in the future, I just didn't know what to call it.
 
@@ -32,13 +29,12 @@ A: Most likely, submit a request in github issues if you wnat anything specific.
 Q: Will you port the vmk layout to other OSes?<br>
 A: I am working on windows one and might do other ones in the future
 
-Q: I want to make my own layout too.<br>
-A: I am going to write a markdown file describing the process of making your own keyboard layout or editing other ones, it will be in this repo when its done.
-
 # Other Stuff
 The [czech coder layout](https://github.com/michalkahle/czech-coder-xkb) by [Michal Kahle](https://github.com/michalkahle) is a cool project and might be all you need, go check it out.<br>
 Tested on Arch Linux, Hyprland.<br>
 Layout screenshots made in Gnome Tecla.<br>
+
+# Troubleshooting
 If your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml` and then reboot:
 ````
     <layout>
@@ -61,3 +57,4 @@ If your system can't find the layout, try putting this into `/usr/share/X11/xkb/
       </variantList>
     </layout>
 ````
+I didn't run into any other issues yet
