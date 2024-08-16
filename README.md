@@ -13,11 +13,12 @@ The layout currently features 2 variants:
 
 # How to Use
 1.  Clone this repo: `git clone https://github.com/vmkxyz/vmk-xkb-layout.git`
-2.  Copy the layout to the `/usr/share/X11/xkb/symbols/` directory: `sudo cp vmk-keyboard-layout/vmk /etc/share/X11/xkb/symbols/vmk`
-3.  Reboot
-4.  Set your keyboard layout to 'vmk' and chose your variant.
+2.  cd into there: `cd vmk-xkb-layout`
+3.  Copy the layout to the /usr/share/X11/xkb/symbols/ directory: `sudo cp vmk /usr/share/X11/xkb/symbols/vmk`
+4.  Reboot
+5.  Set your keyboard layout to 'vmk' and choose your variant.
 
-that should work, havent tested it much tho
+That should work, haven't tested it much tho
 
 # Q&A
 Q: Why is the layout called 'vmk'?<br>
