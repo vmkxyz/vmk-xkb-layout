@@ -18,7 +18,8 @@ Note: only nobloat is currently available for windows.
 2.  cd into there: `cd vmk-xkb-layout`
 3.  Copy the layout to the /usr/share/X11/xkb/symbols/ directory: `sudo cp vmk /usr/share/X11/xkb/symbols/vmk`
 4.  Reboot
-5.  Set your keyboard layout to 'vmk' and choose your variant.
+5.  Set your keyboard layout to 'vmk' by running `setxkbmap vmk` or `setxkbmap vmk variant nobloat` (change nobloat for the variant you want to use).
+Note: If you want to use a GUI to set your layout (e.g. you're using a DE), use the first guide in the troubleshooting section
 
 # How to Use - Windows (binary)
 1.  Download this repo as a zip and extract it (or clone it).
@@ -53,14 +54,15 @@ A: Probably macos.
 * I think the Linux version should work no BSDs too, I don't have any experience with them tho.
 
 # Troubleshooting
-If your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml` and then reboot:
+## System doesn't see the layout (e.g. using a GUI)
+If your system can't find the layout, try putting this into `/usr/share/X11/xkb/rules/evdev.xml` and then reboot (I like putting it in between the Czech and the Danish layouts, just search for Danish, slightly above you should see </layout> followed by <layout> under it, pu the following in between those two):
 ````
     <layout>
       <configItem>
         <name>vmk</name>
         <!-- Keyboard indicator for vmk layouts -->
         <shortDescription>vmk</shortDescription>
-        <description>vmk Custom Layout</description>
+        <description>vmk</description>
         <languageList>
           <iso639Id>eng</iso639Id>
 	</languageList>
@@ -76,4 +78,5 @@ If your system can't find the layout, try putting this into `/usr/share/X11/xkb/
     </layout>
 ````
 
+## Can't add multiple layouts on Windows
 As far as I know, you can only have one custom keyboard layout on Windows at a time, so if you want to use another one, delete the previous.
