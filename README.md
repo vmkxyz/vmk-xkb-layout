@@ -14,7 +14,7 @@ The layout currently features 2 variants:
 Note: only nobloat is currently available for windows.
 
 # How to Use - Linux
-1.  Clone this repo: `git clone https://github.com/vmkxyz/vmk-xkb-layout.git`
+1.  Clone this repo: `git clone https://codeberg.org/vmkxyz/vmk-xkb-layout.git`
 2.  cd into there: `cd vmk-xkb-layout`
 3.  Copy the layout to the /usr/share/X11/xkb/symbols/ directory: `sudo cp vmk /usr/share/X11/xkb/symbols/vmk`
 4.  Reboot
@@ -37,7 +37,7 @@ Note: If you want to use a GUI to set your layout (e.g. you're using a DE), use 
 
 # Q&A
 Q: Why is the layout called 'vmk'?<br>
-A: First half of my github username.
+A: First half of my username.
 
 Q: Will you make more variants?<br>
 A: Yes.
